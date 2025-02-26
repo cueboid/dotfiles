@@ -10,7 +10,10 @@ if status is-interactive
     set -x SDL_IM_MODULE fcitx
     set -x GLFW_IM_MODULE fcitx
 
-    alias hx=helix
+    if not command -q hx
+        alias hx helix
+    end
+
     set -x EDITOR hx
     set -x VISUAL hx
 
