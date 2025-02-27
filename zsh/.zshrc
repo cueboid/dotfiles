@@ -18,14 +18,6 @@ export KEYTIMEOUT=1
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# ime stuff (for japanese typing)
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="@im=fcitx"
-export INPUT_METHOD=fcitx
-export SDL_IM_MODULE=fcitx
-export GLFW_IM_MODULE=fcitx
-
 # improve ls and grep
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
