@@ -106,6 +106,7 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "lua"
 formatter = { command = "stylua", args = [ "-" ] }
+auto-format = true
 
 [[language]]
 name = "python"
