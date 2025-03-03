@@ -35,6 +35,7 @@ auto-format = true
 
 [[language]]
 name = "css"
+language-servers = ["tailwindcss-ls", "vscode-css-language-server"]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
 
