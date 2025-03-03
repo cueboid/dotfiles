@@ -27,6 +27,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias lg='lazygit'
+
 if ! command -v hx &> /dev/null; then
     alias hx='helix'
 fi
