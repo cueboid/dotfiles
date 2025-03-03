@@ -6,7 +6,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
-# setting means cd can not be ommited when changing dir, just type dir to cd into it
+# setting means cd can not be ommited when changing directory, just type a path to cd into it
 setopt auto_cd
 
 # auto completion stuff
