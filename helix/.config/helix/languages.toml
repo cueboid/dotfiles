@@ -23,9 +23,14 @@ name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 auto-format = false
 
+[language-server.emmet-ls]
+args = ["--stdio"]
+command="emmet-ls"
+
 [[language]]
 name = "html"
 formatter = { command = 'prettier', args = ["--parser", "html"] }
+language-servers = ["vscode-html-language-server", "emmet-ls"]
 auto-format = true
 
 [[language]]
