@@ -20,6 +20,10 @@ _comp_options+=(globdots)
 bindkey -v
 export KEYTIMEOUT=1
 
+# HACK: fixes backspace just not working when going from normal to insert mode
+bindkey -M viins '^?' backward-delete-char
+bindkey -M viins '^H' backward-delete-char
+
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
