@@ -6,14 +6,17 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
+# setting means cd can not be ommited when changing dir, just type dir to cd into it
 setopt auto_cd
 
+# auto completion stuff
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+# vi mode stuff
 bindkey -v
 export KEYTIMEOUT=1
 
