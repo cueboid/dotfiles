@@ -24,9 +24,6 @@ export KEYTIMEOUT=1
 bindkey -M viins '^?' backward-delete-char
 bindkey -M viins '^H' backward-delete-char
 
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
 # improve ls and grep
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
