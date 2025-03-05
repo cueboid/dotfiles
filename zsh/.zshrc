@@ -28,6 +28,8 @@ bindkey -M viins '^H' backward-delete-char
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias pm="pulsemixer"
+
 alias lg='lazygit'
 
 if ! command -v hx &> /dev/null; then
