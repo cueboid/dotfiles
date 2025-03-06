@@ -29,8 +29,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 alias pm="pulsemixer"
-
 alias lg='lazygit'
+alias zj='zellij'
 
 if ! command -v hx &> /dev/null; then
     alias hx='helix'
