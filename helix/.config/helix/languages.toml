@@ -117,7 +117,7 @@ auto-format = true
 [[language]]
 name = "python"
 formatter = { command = "ruff", args = ["format", "--line-length", "88", "-"] }
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "    " }
     
 [[language]]
