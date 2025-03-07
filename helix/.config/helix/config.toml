@@ -1,4 +1,4 @@
-theme = "autumn_night"
+theme = "emacs"
 
 [editor]
 line-number = "relative"
