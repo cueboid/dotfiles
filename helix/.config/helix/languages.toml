@@ -37,7 +37,7 @@ auto-format = true
 name = "css"
 language-servers = ["tailwindcss-ls", "vscode-css-language-server"]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "astro"
