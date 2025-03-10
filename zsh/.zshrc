@@ -34,7 +34,7 @@ alias zj='zellij'
 alias mk='make'
 
 if ! command -v hx &> /dev/null; then
-    alias hx='helix'
+	alias hx='helix'
 fi
 
 export EDITOR=hx
