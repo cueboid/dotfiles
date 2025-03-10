@@ -19,6 +19,11 @@ formatter = { command = 'prettier', args = ["--parser", "json"] }
 auto-format = true
 
 [[language]]
+name = "jsonc"
+formatter = { command = 'prettier', args = ["--parser", "json"] }
+auto-format = true
+
+[[language]]
 name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 auto-format = false
