@@ -37,8 +37,8 @@ if ! command -v hx &> /dev/null; then
 	alias hx='helix'
 fi
 
-export EDITOR=hx
-export VISUAL=hx
+export EDITOR=nvim
+export VISUAL=nvim
 
 pfetch
 
