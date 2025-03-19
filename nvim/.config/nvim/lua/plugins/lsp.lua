@@ -40,6 +40,7 @@ return {
 					"prismals",
 					"pyright",
 					"astro",
+					"ts_ls"
 				},
 			})
 
