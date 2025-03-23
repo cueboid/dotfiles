@@ -17,7 +17,6 @@ return {
 				cpp = { "clang_format" },
 
 				css = { "prettier", stop_after_first = true },
-				markdown = { "prettier" },
 				templ = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
