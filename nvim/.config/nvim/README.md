@@ -1,4 +1,4 @@
-this config is pretty bad, but i plan on making it less bad in the future
+this config is pretty bad, but i plan on making it less bad in the future.
 <br>
 this neovim config has taken code/inspiration from:
 <br>
