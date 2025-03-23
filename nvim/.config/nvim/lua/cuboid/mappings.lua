@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- neotree mappings
 vim.api.nvim_set_keymap("n", "<leader>n", ":Neotree toggle float<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree toggle left<CR>", { noremap = true, silent = true })
