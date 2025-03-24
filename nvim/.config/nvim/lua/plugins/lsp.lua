@@ -41,6 +41,7 @@ return {
 					"pyright",
 					"astro",
 					"ts_ls",
+					"clangd",
 				},
 			})
 
@@ -53,6 +54,7 @@ return {
 					"pylint",
 					"gofumpt",
 					"eslint_d",
+					"clang-format",
 				},
 			})
 		end,
