@@ -54,7 +54,7 @@ return {
 					"pylint",
 					"gofumpt",
 					"eslint_d",
-					"clang-format",
+					-- "clang-format",
 				},
 			})
 		end,

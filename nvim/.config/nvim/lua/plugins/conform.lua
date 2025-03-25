@@ -13,8 +13,8 @@ return {
 				sql = { "sqlfmt" },
 				asm = { "asmfmt" },
 
-				c = { "clang_format" },
-				cpp = { "clang_format" },
+				-- c = { "clang_format" },
+				-- cpp = { "clang_format" },
 
 				css = { "prettier", stop_after_first = true },
 				templ = { "prettier" },
