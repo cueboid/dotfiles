@@ -501,6 +501,7 @@ return {
 			dashboard.button("z", "  > Browse Directories", ":Telescope zoxide list<CR>"),
 			dashboard.button("f", "󰈞  > Find file", ":Telescope find_files<CR>"),
 			dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
+			dashboard.button("q", "󰈆  > Exit", ":q!<CR>"),
 		}
 
 		alpha.setup(dashboard.opts)
