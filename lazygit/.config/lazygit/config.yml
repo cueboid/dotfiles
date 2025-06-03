@@ -1,0 +1,22 @@
+gui:
+  tabWidth: 4
+  mouseEvents: true # having mouseEvents disabled breaks lazygit.nvim if you attempt to use your mouse
+  skipNoStagedFilesWarning: true
+  showRandomTip: false
+  showCommandLog: true
+git:
+  paging:
+    pager: "diff-so-fancy"
+    useConfig: false
+    externalDiffCommand: ""
+  #commit:
+  #  signOff: true
+  merging:
+    manualCommit: true
+  log:
+    showWholeGraph: true
+quitOnTopLevelReturn: true
+disableStartupPopups: true
+customCommands: []
+services: {}
+notARepository: 'skip'
