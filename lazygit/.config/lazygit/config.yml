@@ -9,8 +9,8 @@ git:
     pager: "diff-so-fancy"
     useConfig: false
     externalDiffCommand: ""
-  #commit:
-  #  signOff: true
+  commit:
+   signOff: true
   merging:
     manualCommit: true
   log:
