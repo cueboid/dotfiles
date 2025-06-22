@@ -1,5 +1,5 @@
 gui:
-  tabWidth: 4
+  tabWidth: 2
   mouseEvents: true # having mouseEvents disabled breaks lazygit.nvim if you attempt to use your mouse
   skipNoStagedFilesWarning: true
   showRandomTip: false
