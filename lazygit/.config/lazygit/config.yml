@@ -10,7 +10,7 @@ git:
     useConfig: false
     externalDiffCommand: ""
   commit:
-   signOff: true
+    signOff: true
   merging:
     manualCommit: true
   log:
