@@ -26,7 +26,13 @@ setopt nomatch
 unsetopt beep
 
 # completion
-compinit -d ~/.zcompdump
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list '' '' '' 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename '$HOME/.zshrc'
+compinit -d "$HOME/.zcompdump"
 bashcompinit
 
 # vi mode
