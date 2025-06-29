@@ -4,7 +4,7 @@ colors
 # history
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.histfile
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
 HISTCONTROL=ignoreboth
 setopt share_history
 setopt hist_ignore_space
@@ -32,7 +32,7 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list '' '' '' 'm:{[:lower:]}={[:upper:]}'
 zstyle ':completion:*' verbose true
 zstyle :compinstall filename '$HOME/.zshrc'
-compinit -d "$HOME/.zcompdump"
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
 bashcompinit
 
 # vi mode
