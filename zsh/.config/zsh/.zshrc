@@ -4,6 +4,7 @@ colors
 # history
 HISTSIZE=10000
 SAVEHIST=10000
+[[ ! -d "$XDG_STATE_HOME/zsh" ]] && mkdir -p "$XDG_STATE_HOME/zsh"
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 HISTCONTROL=ignoreboth
 setopt share_history
