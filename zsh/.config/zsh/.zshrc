@@ -63,4 +63,4 @@ fi
 
 eval "$(fzf --zsh)"
 
-cowsay "hello $(whoami)"
+# cowsay "hello $(whoami)"
