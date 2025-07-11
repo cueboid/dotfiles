@@ -32,7 +32,7 @@ zstyle ':completion:*' insert-unambiguous true
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list '' '' '' 'm:{[:lower:]}={[:upper:]}'
 zstyle ':completion:*' verbose true
-zstyle :compinstall filename '$HOME/.zshrc'
+zstyle :compinstall filename '$ZDOTDIR/.zshrc'
 compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
 bashcompinit
 
