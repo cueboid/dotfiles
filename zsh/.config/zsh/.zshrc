@@ -58,7 +58,7 @@ alias n='nvim'
 alias v='vim'
 
 if ! command -v hx &> /dev/null; then
-    alias hx='helix'
+  alias hx='helix'
 fi
 
 eval "$(fzf --zsh)"
