@@ -6,3 +6,5 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 export MANPAGER='nvim +Man!'
+
+export EDITOR="nvim"
