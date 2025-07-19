@@ -61,6 +61,10 @@ if ! command -v hx &> /dev/null; then
   alias hx='helix'
 fi
 
-eval "$(fzf --zsh)"
+if command -v fzf &>/dev/null; then
+  eval "$(fzf --zsh)"
+else
+  echo "fzf is not installed"
+fi
 
 # cowsay "hello $(whoami)"
