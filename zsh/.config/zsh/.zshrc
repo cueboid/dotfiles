@@ -100,4 +100,4 @@ else
   echo "fzf is not installed"
 fi
 
-# cowsay "hello $(whoami)"
+cowsay "hello $(whoami)"
