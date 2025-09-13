@@ -94,6 +94,10 @@ if ! command -v hx &> /dev/null; then
   alias hx='helix'
 fi
 
+if ! command -v bat &> /dev/null; then
+  alias bat="batcat"
+fi
+
 if command -v fzf &>/dev/null; then
   eval "$(fzf --zsh)"
 else
