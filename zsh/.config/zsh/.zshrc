@@ -12,45 +12,12 @@ setopt hist_ignore_space
 setopt extended_history
 
 # prompt
-# setopt PROMPT_SUBST
-# zstyle ':vcs_info:git:*' formats '%F{magenta}(%b)%f'
-# zstyle ':vcs_info:hg:*' formats '%F{magenta}(%b)%f'
-# precmd() { vcs_info }
-# PROMPT='%F{%(?.green.red)}➜%f %F{blue}%~%f ${vcs_info_msg_0_}
-# %# '
-
-# i dislike this prompt, i've spent too long on this shit
-preexec() {
-  TIMER_START=$(( $(date +%s%N) / 1000000 ))
-}
-
-precmd() {
-  local exit_code=$?
-
-  if [[ $exit_code -eq 0 ]]; then
-    EXIT_SEGMENT="%F{green}[0]%f"
-  else
-    EXIT_SEGMENT="%F{red}[${exit_code}]%f"
-  fi
-
-  if [[ -n $TIMER_START ]]; then
-    local timer_end=$(( $(date +%s%N) / 1000000 ))
-    local elapsed=$((timer_end - TIMER_START))
-    unset TIMER_START
-  fi
-
-  vcs_info
-
-  RPROMPT="${EXIT_SEGMENT} %F{cyan}${elapsed:-0}ms%f"
-}
-
 setopt PROMPT_SUBST
-zstyle ':vcs_info:git:*' formats '%F{magenta}%b%f'
-zstyle ':vcs_info:hg:*' formats '%F{magenta}%b%f'
-
-PROMPT='
-%F{green}%n%f@%F{blue}%m%f %F{yellow}%~%f ${vcs_info_msg_0_}
-> '
+zstyle ':vcs_info:git:*' formats '%F{magenta}(%b)%f'
+zstyle ':vcs_info:hg:*' formats '%F{magenta}(%b)%f'
+precmd() { vcs_info }
+PROMPT='%F{%(?.green.red)}➜%f %F{blue}%~%f ${vcs_info_msg_0_}
+%# '
 
 # misc options
 setopt interactivecomments
@@ -105,3 +72,4 @@ else
 fi
 
 cowsay "hello $(whoami)"
+
