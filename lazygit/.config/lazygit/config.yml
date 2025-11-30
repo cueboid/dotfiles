@@ -5,10 +5,10 @@ gui:
   showRandomTip: false
   showCommandLog: true
 git:
-  paging:
-    pager: "diff-so-fancy"
-    useConfig: false
-    externalDiffCommand: ""
+  pagers:
+    - pager: "diff-so-fancy"
+      useConfig: false
+      externalDiffCommand: ""
   commit:
     signOff: true
   merging:
